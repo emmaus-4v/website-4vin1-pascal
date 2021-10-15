@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TEMPTITLE</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 class="MainHeader">
+            <a href="index.html">
+                <img src="Images/ForHonorLogoHD.jpg",
+                alt="For Honor", class="MainHeader">
+            </a>
+        </h1>
+
+        <ul class="NavBar">
+            <li class="NavItem"><a href="index.html", class="NavLink">Home</a></li>
+            <li class="NavItem"><a href="Factions.html", class="NavLink">Factions</a></li>
+            <li class="NavItem"><a href="form.html", class="NavLink", id="Active">Opinion</a></li>
+        </ul>
+
+        <div class="StandardDiv">
+            <p class="StandardTextXimage">
+                Whats your opinion? To let me know, fill out the form below. (Nobody cares about it)
+            </p>
+        </div>
+
+        <div class="StandardDiv">
+            <form action="FilledOutForm.html", method="GET", class="FormTag">
+
+                <div class="FormRow">
+                    
+                    <!---Name--->
+                    <div class="FormRowField">
+                    <label for="FullName">Name</label>
+                    <input  id="FullName", 
+                            name="FullName", 
+                            type="text",
+                            placeholder="Name"
+                            required
+                    />
+                    <br/>
+                    </div>
+
+
+                    <!---email--->
+                    <div class="FormRowField">
+                    <label for="Email">Email</label>
+                    <input  id="Email",
+                            name="Email",
+                            type="email"
+                            placeholder="name@example.com"
+                            required
+                    />
+                    <br/>
+                    </div>
+
+                    <!---selector--->
+                    <div class="FormRowField">
+                        <label for="Worst-character">Worst character</label>
+                            <select id="Worst-character" name="Worst-character" required>
+                                <option value="Warden">Warden</option>
+                                <option value="Peacekeeper">Peacekeeper</option>
+                                <option value="Centurion">Centurion</option>
+                                <option value="Black Prior">Black Prior</option>
+                                <option value="Conquerer">Conquerer</option>
+                                <option value="Lawbringer">Lawbringer</option>
+                                <option value="Warmonger">Warmonger</option>
+                                <option value="Gryphon">Gryphon</option>
+                                <option value="Raider">Raider</option>
+                                <option value="Warlord">Warlord</option>
+                                <option value="Berserker">Berserker</option>
+                                <option value="Valkyrie">Valkyrie</option>
+                                <option value="Highlander">Highlander</option>
+                                <option value="Shaman">Shaman</option>
+                                <option value="Jormungandr">Jormungandr</option>
+                                <option value="Kensei">Kensei</option>
+                                <option value="Shugoki">Shugoki</option>
+                                <option value="Orochi">Orochi</option>
+                                <option value="Nobushi">Nobushi</option>
+                                <option value="Shinobi">Shinobi</option>
+                                <option value="Aramusha">Aramusha</option>
+                                <option value="Hitokiri">Hitokiri</option>
+                                <option value="Kyoshin">Kyoshin</option>
+                                <option value="Tiandi">Tiandi</option>
+                                <option value="Jiang Jun">Jiang Jun</option>
+                                <option value="Nuxia">Nuxia</option>
+                                <option value="Shaolin">Shaolin</option>
+                                <option value="Zhanhu">Zhanhu</option>
+                            </select>
+                            
+                    </div>
+
+                    <!---text area--->
+                    <div class="FormRowField">
+                        <label id="TextAreaWhyText" for="Why">Why</label>
+                        <br/>
+                        <textarea id="Why", name="Why"></textarea>
+                        <div class="TextAreaInstructions">Describe why you hate this character in 500 words or less</div>
+                    </div>
+                    <br/>
+                    <br/>
+
+                    <!---Submit Confimation--->
+                    <div class="FormRowField">
+                        <label class="ConfirmButton" for="Confirm">
+                                <input  id="Confirm"
+                                         name="Confirm"
+                                        type="checkbox"
+                                        value="IsConfirmed"
+                                        required
+                                />
+                            <span>I agree to the terms and conditions</span>
+                        </label>
+                        <br/>
+                    </div>
+                    <br/>    
+
+                    <!---Submit button--->
+                    <div>
+                        
+                        <a location.href="FilledOutForm.html">
+                            <button type=submit, name="SubmitButton" , class="SubmitButton">Submit</button>
+                        </a>
+
+                    </div>
+
+
+                </div>
+            </form>
+        </div>
+    </body>
+    <footer class="StandardDiv">
+        <p class="FooterText">@PJR 2021</p>
+        <br/>
+        <div class="FooterText">  <a href="TermsAndConditions.html">Terms and conditions</a>  </div>
+        <br/>
+        <div class="FooterText">   <a href="contact.html">Contact us</a>  </div>
+    </footer>
+</html>
