@@ -3,8 +3,8 @@ Starter template for creating website in gitpod or replit
 
 Deze website is gebaseerd op het template voor 4HV van het Emmauscollege Rotterdam
 
-## Mijn website: *onderwerp*
-Gemaakt door: *naam van leerling*
+## Mijn website: For Honor
+Gemaakt door: Pascal Roxs
 
 ## Mijn planning
 Werk de planning af van boven naar beneden<br>
@@ -13,14 +13,14 @@ Geef aan met [x] welke onderdelen af zijn
 ### Basisstappen
 
 Stap 1: Start 
-- [ ] Je hebt het onderwerp van je website gekozen en door je docent laten goedkeuren. 
-- [ ] Je hebt een account aangemaakt op www.github.com
-- [ ] Je hebt de voorbeeld website van de docent gekopieerd naar je eigen github account en het werkt. 
+- [x] Je hebt het onderwerp van je website gekozen en door je docent laten goedkeuren. 
+- [x] Je hebt een account aangemaakt op www.github.com
+- [x] Je hebt de voorbeeld website van de docent gekopieerd naar je eigen github account en het werkt. 
 
 Stap 2: Bestandsstructuur opzetten 
-- [ ] Je hebt bepaald wat je op de hoofdpagina en de subpagina’s (minimaal 4) wilt laten zien.
+- [x] Je hebt bepaald wat je op de hoofdpagina en de subpagina’s (minimaal 4) wilt laten zien.
 - [ ] Je maakt een html-bestand voor alle pagina’s. De titel en het menu staan erop, maar de inhoud nog niet. 
-- [ ] Je hebt een werkend menu waarmee je naar de verschillende pagina’s kunt gaan, de layout kun je later nog aanpassen en mooi maken. 
+- [x] Je hebt een werkend menu waarmee je naar de verschillende pagina’s kunt gaan, de layout kun je later nog aanpassen en mooi maken. 
 
 Stap 3: Lay-out 
 - [ ] Je hebt de lay-out (welk onderdeel komt waar op het scherm) van je pagina’s gekozen. Het is handig om voor al je pagina’s dezelfde lay-out te gebruiken. 
@@ -63,4 +63,4 @@ https://emmauscollege.github.io/informatica/website/
 
 ## Credits
 - Website template van het Emmauscollege Rotterdam https://github.com/emmauscollege/4HV-website-template
-- ...
+- Website zlef gemaakt door Pascal Roxs
