@@ -11,12 +11,14 @@ html {
 }
 
 body {
-    width: 100%;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .FooterText {
     font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
+    text-decoration: none!important;
     color: var(--TextColor);
     display: block;
     text-align: centre;
@@ -30,6 +32,25 @@ body {
     height: 150px;
 }
 
+/*Links*/
+
+ a:link {
+    color: var(--TextColor);
+  }
+  
+  a:visited {
+    color: var(--TextColor);
+  }
+  
+  a:hover {
+    color: var(--TextColor);
+  }
+  
+  a:active {
+    color: var(--TextColor);
+  } 
+
+
 /*Navigation bar*/
 
 .NavBar {
@@ -39,7 +60,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--SecondayColor);
-    border-left: 10px solid var(--MainColor);
+    border-left: 2px solid var(--MainColor);
     
 }
 
@@ -70,6 +91,58 @@ body {
     background-color: rgb(10, 10, 10);
     color: var(--TextColor);
 }
+
+/*Responsive gallery*/
+
+div.gallery {
+    border: 5px solid var(--SecondayColor);
+  }
+  
+  div.gallery:hover {
+    border: 5px solid var(--MainColor);
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none!important;
+    color: var(--TextColor);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.9%;
+  }
+
+/*Steam reviews*/
+
+  .SteamReviewsImage {
+      width: 50%;
+      overflow: hidden;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+  }
+
+  .SteamIFrame {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 99%;
+      height: 700px;
+  }
 
 /*Form*/
 
@@ -208,4 +281,6 @@ body {
     text-align: centre;
     display: table;
     width: 85%;
+    border-left: 2px solid var(--MainColor);
+    
 }
