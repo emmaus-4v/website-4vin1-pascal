@@ -41,8 +41,8 @@ Stap 5: Kleuren
 - [x] Je hebt de kleuren en fonts in CSS toegevoegd. 
 
 Stap 6: Perfectioneren 
-- [ ] Je hebt slordigheden in de lay-out, kleuren en inhoud gerepareerd. 
-- [ ] Je hebt gezorgd dat je HTML en CSS goed leesbaar zijn (geen herhaling, uit logische onderdelen opgebouwd, inclusief commentaar, …)
+- [x] Je hebt slordigheden in de lay-out, kleuren en inhoud gerepareerd. 
+- [x] Je hebt gezorgd dat je HTML en CSS goed leesbaar zijn (geen herhaling, uit logische onderdelen opgebouwd, inclusief commentaar, …)
 - [x] Je hebt gecontroleerd of de lay-out werkt op een groter venster, een kleiner venster, een ander apparaat en andere browser. 
 
 Stap 7: Eye catchers 
