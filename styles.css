@@ -22,8 +22,32 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none!important;
     color: var(--TextColor);
-    display: block;
+    background-color: none;
+    margin: 10px;
+    transition: margin 0.7s ease, background-color 0.3s ease;
+
+    border-radius: 10px 30px;
+    border: none;
+    padding: 15px;
+}
+
+.FooterDiv {
+    border-radius: 10px 65px;
+    border: none;
+    border-left: 2px solid var(--MainColor);
+    border-bottom: 2px solid var(--MainColor);
+    
+    padding: 10px;
+    background-color: var(--4thcolor);
     text-align: centre;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.FooterText:hover {
+    margin: 10px 30px;
+    background-color: black;
 }
 
 /*header*/
@@ -34,24 +58,33 @@ body {
     height: 150px;
 
     filter: drop-shadow(0px 0px 10px black);
+
+    transition: filter 0.3s ease;
 }
 
+.MainHeader:hover {
+    filter: drop-shadow(0px 0px 20px black);;
+}
 /*Links*/
 
  a:link {
     color: var(--TextColor);
+    text-decoration: none;
   }
   
   a:visited {
     color: var(--TextColor);
+    text-decoration: none;
   }
   
   a:hover {
     color: var(--TextColor);
+    text-decoration: none;
   }
   
   a:active {
     color: var(--TextColor);
+    text-decoration: none;
   } 
 
 
@@ -63,7 +96,10 @@ body {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    
+
+    display: flex;
+    justify-content: space-evenly;
+
     background-color: var(--SecondayColor);
     
     border-radius: 10px 30px;
@@ -89,6 +125,7 @@ body {
 .NavLink {
     transition: background-color 0.3s, margin 0.7s;
     background-color: var(--SecondayColor);
+    width: 100%;
 
     padding: 15px;
     color: var(--TextColor);
@@ -153,17 +190,13 @@ div.gallery {
   }
   
   div.desc {
-    padding: 15px;
-    padding-top: 0px;
+    padding: 20px;
+    padding-top: 10px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-
+    text-decoration: none;
     
     color: var(--TextColor);
-  }
-
-  desc {
-    text-decoration: none;
   }
   
   * {
@@ -346,3 +379,5 @@ div.gallery {
     display: table;
     width: 85%;
 }
+
+
