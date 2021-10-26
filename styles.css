@@ -3,7 +3,7 @@
 :root {
     --MainColor: rgb(100, 0, 100);
     --SecondayColor: rgb(40, 40, 40);
-    --TersiaryColor: rgb(10, 10, 10);
+    --TersiaryColor: rgb(5, 5, 5);
     --4thcolor: rgb(20, 20, 20);
     --TextColor: rgb(210, 210, 210);
 }
@@ -32,6 +32,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     height: 150px;
+
+    filter: drop-shadow(0px 0px 10px black);
 }
 
 /*Links*/
@@ -61,9 +63,13 @@ body {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    background-color: var(--SecondayColor);
-    border-left: 2px solid var(--MainColor);
     
+    background-color: var(--SecondayColor);
+    
+    border-radius: 10px 30px;
+    border: none;
+    border-left: 2px solid var(--MainColor);
+    border-bottom: 2px solid var(--MainColor);
 }
 
 .NavItem {
@@ -74,58 +80,97 @@ body {
 
 .NavLink:hover {
     background-color: Black;
+    margin: 15px 25px;
+
+    border-radius: 10px 30px;
+    border: none;
 }
 
 .NavLink {
+    transition: background-color 0.3s, margin 0.7s;
     background-color: var(--SecondayColor);
+
     padding: 15px;
     color: var(--TextColor);
     text-decoration: none;
+
+    border-radius: 10px 30px;
+    border: none;
 }
 
 #Active {
     background-color: var(--MainColor);
+
+    border-radius: 10px 30px;
+    border: none;
 }
 
 /*body*/
 
 body {
     background-color: var(--TersiaryColor);
+    background-image: linear-gradient( var(--SecondayColor), var(--TersiaryColor), black);
     color: var(--TextColor);
 }
 
 /*Responsive gallery*/
 
+@keyframes GalleryAnimation {
+    0% { transform : rotate(0deg) }
+    100% { transform : rotate(360deg) }
+}
+
+.responsive:hover {
+    animation: GalleryAnimation 1.5s ease;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.9%;
+  }
+
 div.gallery {
-    border: 5px solid var(--SecondayColor);
+    background-color: var(--TersiaryColor);
+
+    border-radius: 10px 65px;
+    border: none;
+    border: 2px solid var(--SecondayColor);
   }
   
   div.gallery:hover {
-    border: 5px solid var(--MainColor);
+    border-radius: 10px 65px;
+    border: none;
+    border: 2px solid var(--MainColor);
   }
   
   div.gallery img {
     width: 100%;
-    height: auto;
+    height: 100%;
+
+    border-radius: 10px 65px;
+    border: none;
   }
   
   div.desc {
     padding: 15px;
+    padding-top: 0px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none!important;
+
+    
     color: var(--TextColor);
+  }
+
+  desc {
+    text-decoration: none;
   }
   
   * {
     box-sizing: border-box;
   }
   
-  .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.9%;
-  }
+  
 
 /*Steam reviews*/
 
@@ -157,20 +202,31 @@ div.gallery {
     text-align: left;
     display: block;
     padding: 1%;
+
+    border-radius: 10px 65px;
+    border: none;
+    border: 2px solid var(--MainColor);
 }
 
 .FormRow label {
     padding: 20px;
+    padding-left: 0px;
+    margin-left: 0px;
 }
+
 
 /*Form inputs*/
 
-.FormRow input[type="text"] {
+.FormRow input[type="text"]{
     background-color: var(--SecondayColor);
     color: var(--TextColor);
     border: 1px solid rgb(0, 0, 0);
     padding: 7px;
     margin: 10px;
+
+    border-radius: 10px;
+    border: none;
+    border: 2px solid var(--MainColor);
 }
 
 .FormRow input[type="email"] {
@@ -179,6 +235,10 @@ div.gallery {
     border: 1px solid rgb(0, 0, 0);
     padding: 7px;
     margin: 10px;
+
+    border-radius: 10px;
+    border: none;
+    border: 2px solid var(--MainColor);
 }
 
 .FormRow select {
@@ -187,6 +247,10 @@ div.gallery {
     border: 1px solid rgb(0, 0, 0);
     padding: 7px;
     margin: 30px;
+
+    border-radius: 15px;
+    border: none;
+    border: 2px solid var(--MainColor);
 }
 
 .FormRow textarea {
@@ -198,6 +262,10 @@ div.gallery {
     resize: none;
     width: 85%;
     min-height: 150px;
+
+    border-radius: 10px;
+    border: none;
+    border: 2px solid var(--MainColor);
 }
 
 .TextAreaInstructions {
@@ -207,7 +275,7 @@ div.gallery {
 }
 
 #TextAreaWhyText {
-    margin-right:11%;
+    margin-right: 13%;
 }
 
 .FormRow button {
@@ -216,6 +284,10 @@ div.gallery {
     border: 1px solid rgb(0, 0, 0);
     padding: 7px;
     margin: 10px;
+
+    border-radius: 10px;
+    border: none;
+    border: 2px solid var(--MainColor);
 }
 
 .SubmitButton {
@@ -223,6 +295,7 @@ div.gallery {
     color: var(--TextColor);
     border: 1px solid rgb(0, 0, 0);
     padding: 7px;
+    padding-left: 0px;
     margin: 10px;
 }
 
@@ -236,22 +309,19 @@ div.gallery {
     border: 1px solid rgb(0, 0, 0);
     padding: 7px;
     margin: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    border: 2px solid var(--MainColor);
+}
+
+#WhyWontThisThingListenToMeJustHaveTheCorrectF_ckingMarginThankYou {
+    margin-left: 10px;
 }
 
 /*Misc*/
 
-.StandardText {
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    color: var(--TextColor);
-    /*display: inline-block; */
-    float: left;
-    width: 73%;
-    margin-right: 1%;
-    position: relative;
-}
-
-.StandardTextXimage {
+.StandardText{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: var(--TextColor);
@@ -260,18 +330,12 @@ div.gallery {
     width: 100%;
 }
 
-.StandardImage {
-    position: relative;
-    /*display: inline-block;*/
-    width: 25%;
-    left: 0%;
-    float: right;
-}
-
 .StandardDiv {
-    
-    border-left: 10px solid var(--MainColor);
+    border-radius: 10px 65px;
     border: none;
+    border-left: 2px solid var(--MainColor);
+    border-bottom: 2px solid var(--MainColor);
+    
     list-style-type: none;
     padding: 40px;
     margin: auto;
@@ -281,6 +345,4 @@ div.gallery {
     text-align: centre;
     display: table;
     width: 85%;
-    border-left: 2px solid var(--MainColor);
-    
 }
