@@ -40,7 +40,7 @@ body {
     
     padding: 10px;
     background-color: var(--4thcolor);
-    text-align: centre;
+    text-align: center;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
@@ -262,6 +262,8 @@ div.gallery {
     border-radius: 10px 65px;
     border: none;
     border: 2px solid var(--MainColor);
+
+    outline: none;
 }
 
 .FormRow label {
