@@ -1,3 +1,13 @@
+/*css*/
+
+:root {
+    --MainColor: rgb(100, 0, 100);
+    --SecondayColor: rgb(215,215,215);
+    --TersiaryColor: rgb(250,250,250);
+    --4thcolor: rgb(235,235,235);
+    --TextColor: rgb(45,45,45);
+}
+
 html {
     width: 100%;
 }
@@ -38,6 +48,7 @@ body {
 
 .FooterText:hover {
     margin: 10px 30px;
+    background-color: black;
 }
 
 /*header*/
@@ -47,11 +58,13 @@ body {
     text-align: center;
     height: 150px;
 
+    filter: drop-shadow(0px 0px 10px black);
 
+    transition: filter 0.3s ease;
 }
 
 img.MainHeader:hover {
-
+    filter: drop-shadow(0px 0px 25px black);
 }
 /*Links*/
 
@@ -98,8 +111,6 @@ img.MainHeader:hover {
 }
 
 .NavItem {
-    transition: margin 1s ease;
-
     display: inline-block;
     color: var(--TextColor);
     text-align: center;
@@ -109,19 +120,15 @@ img.MainHeader:hover {
     
     color: var(--TextColor);
     text-decoration: none;
-    margin: 15px;
-}
-
-.NavItem:hover {
-    margin: 15px 50px;
+    margin: 10px;
 }
 
 .NavLink {
-    
-
+    transition: background-color 0.3s, margin 0.7s;
     padding: 10px 45px;
     margin: 15px;
     width: 100%;
+    background-color: var(--SecondayColor);
 
     border-radius: 10px 65px;
     border: none;
@@ -129,15 +136,21 @@ img.MainHeader:hover {
 }
 
 .NavLink:hover {
-    
+    margin: 15px 50px;
+    background-color: Black;
 }
 
 #Active {
-    
+    background-color: var(--MainColor);
 }
 
 /*body*/
 
+body {
+    background-color: var(--TersiaryColor);
+    background-image: linear-gradient( var(--SecondayColor), var(--TersiaryColor), black);
+    color: var(--TextColor);
+}
 
 /*Responsive gallery*/
 
@@ -153,11 +166,12 @@ img.MainHeader:hover {
     display: flex;
     justify-content: space-evenly;
 
-    
+    background-color: var(--4thcolor);
     
     border-radius: 10px 100px;
     border: none;
-    
+    border-left: 2px solid var(--MainColor);
+    border-bottom: 2px solid var(--MainColor);
 
 }
 
@@ -175,10 +189,10 @@ img.MainHeader:hover {
   }
 
 div.gallery {
-    
+    background-color: var(--TersiaryColor);
 
     border-radius: 10px 100px;
-    
+    border: 2px solid var(--SecondayColor);
   }
   
   div.gallery img {
@@ -186,7 +200,7 @@ div.gallery {
     height: 100%;
 
     border-radius: 10px 100px;
-    
+    border: 2px solid var(--SecondayColor);
     overflow: hidden;
   }
   
@@ -197,7 +211,7 @@ div.gallery {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     
-    
+    color: var(--TextColor);
   }
   
   * {
@@ -214,9 +228,12 @@ div.gallery {
 
 .CharacterDiv {
     display: block;
+
+    transition: 1s ease;
 }
 
 .CharacterDiv:hover {
+    filter: drop-shadow(0px 0px 10px white);
     
 }
 
@@ -263,7 +280,7 @@ div.gallery {
 /*Form*/
 
 .FormTag {
-
+    background-color: var(--4thcolor);
 }
 
 .FormRow {
@@ -274,6 +291,7 @@ div.gallery {
 
     border-radius: 10px 65px;
     border: none;
+    border: 2px solid var(--MainColor);
 
     outline: none;
 }
@@ -288,30 +306,45 @@ div.gallery {
 /*Form inputs*/
 
 .FormRow input[type="text"]{
+    background-color: var(--SecondayColor);
+    color: var(--TextColor);
+    border: 1px solid rgb(0, 0, 0);
     padding: 7px;
     margin: 10px;
 
     border-radius: 10px;
     border: none;
+    border: 2px solid var(--MainColor);
 }
 
 .FormRow input[type="email"] {
+    background-color: var(--SecondayColor);
+    color: var(--TextColor);
+    border: 1px solid rgb(0, 0, 0);
     padding: 7px;
     margin: 10px;
 
     border-radius: 10px;
     border: none;
+    border: 2px solid var(--MainColor);
 }
 
 .FormRow select {
+    background-color: var(--SecondayColor);
+    color: var(--TextColor);
+    border: 1px solid rgb(0, 0, 0);
     padding: 7px;
     margin: 30px;
 
     border-radius: 15px;
     border: none;
+    border: 2px solid var(--MainColor);
 }
 
 .FormRow textarea {
+    background-color: var(--SecondayColor);
+    color: var(--TextColor);
+    border: 1px solid rgb(0, 0, 0);
     padding: 7px;
     margin: 10px;
     resize: none;
@@ -320,9 +353,11 @@ div.gallery {
 
     border-radius: 10px;
     border: none;
+    border: 2px solid var(--MainColor);
 }
 
 .TextAreaInstructions {
+    color: rgb(150 , 150, 150);
     font-size: 70%;
     margin-left: 10px;
 }
@@ -332,28 +367,40 @@ div.gallery {
 }
 
 .FormRow button {
+    background-color: var(--SecondayColor);
+    color: var(--TextColor);
+    border: 1px solid rgb(0, 0, 0);
     padding: 7px;
     margin: 10px;
 
     border-radius: 10px;
     border: none;
+    border: 2px solid var(--MainColor);
 }
 
 .SubmitButton {
+    background-color: var(--SecondayColor);
+    color: var(--TextColor);
+    border: 1px solid rgb(0, 0, 0);
     padding: 7px;
     padding-left: 0px;
     margin: 10px;
 }
 
 .SubmitButton:hover {
+    background-color: black;
 }
 
 .ConfirmButton {
+    background-color: var(--SecondayColor);
+    color: var(--TextColor);
+    border: 1px solid rgb(0, 0, 0);
     padding: 7px;
     margin: 10px;
     margin-top: 10px;
     border-radius: 10px;
     border: none;
+    border: 2px solid var(--MainColor);
 }
 
 #WhyWontThisThingListenToMeJustHaveTheCorrectF_ckingMarginThankYou {
@@ -366,7 +413,7 @@ div.gallery {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: var(--TextColor);
-
+    /*display: inline-block;*/
     float: left;
     width: 100%;
 }
@@ -374,13 +421,15 @@ div.gallery {
 .StandardDiv {
     border-radius: 10px 65px;
     border: none;
+    border-left: 2px solid var(--MainColor);
+    border-bottom: 2px solid var(--MainColor);
     
     list-style-type: none;
     padding: 40px;
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
-
+    background-color: var(--4thcolor);
     text-align: centre;
     display: table;
     width: 85%;

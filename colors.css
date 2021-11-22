@@ -1,0 +1,141 @@
+/*css*/
+
+:root {
+    --MainColor: rgb(100, 0, 100);
+    --SecondayColor: rgb(40, 40, 40);
+    --TersiaryColor: rgb(5, 5, 5);
+    --4thcolor: rgb(20, 20, 20);
+    --TextColor: rgb(210, 210, 210);
+    --FullColor: rgb(0,0,0);
+    --OpositeFullColor: rgb(255,255,255);
+}
+
+.FooterText:hover {
+    background-color: var(--FullColor);
+}
+
+.MainHeader {
+    filter: drop-shadow(0px 0px 10px var(--FullColor));
+    transition: filter 0.3s ease;
+}
+
+.MainHeader:hover {
+    filter: drop-shadow(0px 0px 25px var(--FullColor));
+}
+
+.NavLink {
+    transition: background-color 0.3s;
+    background-color: var(--SecondayColor);
+}
+
+.NavLink:hover {
+    background-color: var(--FullColor);
+}
+
+#Active {
+    background-color: var(--MainColor);
+}
+
+body {
+    background-color: var(--TersiaryColor);
+    background-image: linear-gradient( var(--SecondayColor), var(--TersiaryColor), var(--FullColor));
+    color: var(--TextColor);
+}
+
+.GalleryDiv {
+    background-color: var(--4thcolor);
+
+    border-left: 2px solid var(--MainColor);
+    border-bottom: 2px solid var(--MainColor);
+}
+
+div.gallery{
+    background-color: var(--TersiaryColor);
+
+    border: 2px solid var(--SecondayColor);
+    }
+
+    div.gallery.img {
+        border: 2px solid var(--SecondayColor);
+    }
+
+div.desc {
+    color: var(--TextColor);
+}
+
+.CharacterDiv {
+    filter: none;
+    transition: filter 1s ease;
+}
+
+.CharacterDiv:hover {
+    filter: drop-shadow(0px 0px 10px var(--OppositeFullColor));
+}
+
+.FormTag {
+    background-color: var(--4thcolor);
+}
+
+.FormRow {
+    border: 2px solid var(--MainColor);
+}
+
+.FormRow input[type="text"]{
+    background-color: var(--SecondayColor);
+    color: var(--TextColor);
+    border: 2px solid var(--MainColor);
+}
+
+.FormRow input[type="email"] {
+    background-color: var(--SecondayColor);
+    color: var(--TextColor);
+    border: 2px solid var(--MainColor);
+}
+
+.FormRow select {
+    background-color: var(--SecondayColor);
+    color: var(--TextColor);
+    border: 2px solid var(--MainColor);
+}
+
+.FormRow textarea {
+    background-color: var(--SecondayColor);
+    color: var(--TextColor);
+    border: 2px solid var(--MainColor);
+}
+
+.TextAreaInstructions {
+    color: var(--SecondayColor);
+}
+
+.FormRow button {
+    background-color: var(--SecondayColor);
+    color: var(--TextColor);
+    border: 2px solid var(--MainColor);
+}
+
+.SubmitButton {
+    background-color: var(--SecondayColor);
+    color: var(--TextColor);
+    border: 1px solid var(--FullColor);
+}
+
+.SubmitButton:hover {
+    background-color: var(--FullColor);
+}
+
+.ConfirmButton {
+    background-color: var(--SecondayColor);
+    color: var(--TextColor);
+    border: 2px solid var(--MainColor);
+}
+
+.StandardText{
+    color: var(--TextColor);
+}
+
+.StandardDiv {
+    border-left: 2px solid var(--MainColor);
+    border-bottom: 2px solid var(--MainColor);
+    background-color: var(--4thcolor);
+}
