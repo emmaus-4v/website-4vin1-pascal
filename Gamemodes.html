@@ -2,7 +2,13 @@
 <html>
     <head>
         <title>Gamemodes</title>
+        <meta charset="UTF-8">
+
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="colors.css" id="DarkMode">
+        <link rel="stylesheet" href="colorsLight.css" id="LightMode" media="none">
+
+        <script type="text/javascript" src="Script.js"></script>
     </head>
     <body>
         <h1 class="MainHeader">
@@ -15,7 +21,7 @@
         <nav>
         <ul class="NavBar">
             <li class="NavItem"><a href="index.html", class="NavLink">Home</a></li>
-            <li class="NavItem"><a href="Characters.html", class="NavLink">Characters</a></li>
+            <li class="NavItem"><a href="CharactersV2.html", class="NavLink">Characters</a></li>
             <li class="NavItem"><a href="Gamemodes.html", class="NavLink", id="Active">Game modes</a></li>
             <li class="NavItem"><a href="SteamReviews.html", class="NavLink">Steam reviews</a></li>
             <li class="NavItem"><a href="form.html", class="NavLink">Opinion</a></li>
@@ -86,5 +92,6 @@
         <a class="FooterText" href="index.html">&#169;PJR 2021</a>
         <a class="FooterText" href="TermsAndConditions.html">Terms and conditions</a>
         <a class="FooterText" href="contact.html">Contact us</a>
+        <button onclick="switchColors()" class="FooterText SwitchButton">Light Mode</button>
     </footer>
 </html>

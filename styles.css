@@ -1,5 +1,10 @@
+:root {
+    --CV2DivHeight : 0px;
+}
+
 html {
     width: 100%;
+    
 }
 
 body {
@@ -53,6 +58,7 @@ body {
 img.MainHeader:hover {
 
 }
+
 /*Links*/
 
  a:link {
@@ -209,7 +215,7 @@ div.gallery {
 #CharacterDiv2IGuess {
     display: flex;
     justify-content: center;
-    
+    overflow-wrap: scroll;
 }
 
 .CharacterDiv {
@@ -220,26 +226,65 @@ div.gallery {
     
 }
 
-
+/*
 .KnightsDivText, .VikingsDivText, .SamuraiDivText, .WuLinDivText {
     display: none;
 }
+*/
 
-#KnightsDiv:hover + .KnightsDivText {
-    display: block;
+#KnightsDivText {
+    visibility: hidden;
+    
+    transition: all 0.3s ease;
 }
 
-#VikingsDiv:hover + .VikingsDivText {
-    display: block;
+#VikingsDivText {
+    visibility: hidden;
+    
+    transition: all 0.3s ease;
 }
 
-#SamuraiDiv:hover + .SamuraiDivText {
-    display: block;
+#SamuraiDivText {
+    visibility: hidden;
+    
+    transition: all 0.3s ease;
 }
 
-#WuLinDiv:hover + .WuLinDivText {
-    display: block;
+#WuLinDivText {
+    visibility: hidden;
+    
+    transition: all 0.3s ease;
 }
+
+.CV2DivText {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: var(--TextColor);
+
+    position: absolute;
+} 
+
+.CV2DivTextDiv {
+    overflow: scroll;
+    height: var(--CV2DivHeight);
+}
+
+#KnightsDivImage {
+    transition: all 0.3s ease;
+}
+
+#VikingsDivImage {
+    transition: all 0.3s ease;
+}
+
+#SamuraiDivImage {
+    transition: all 0.3s ease;
+}
+
+#WuLinDivImage {
+    transition: all 0.3s ease;
+}
+
 
 /*Steam reviews*/
 
@@ -386,4 +431,11 @@ div.gallery {
     width: 85%;
 }
 
+/* Color switcher */ 
 
+.SwitchButton {
+    font-size: 16px;
+
+    border-radius: 30px 10px;
+    border: none;
+}

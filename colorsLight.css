@@ -139,3 +139,27 @@ div.desc {
     border-bottom: 2px solid var(--MainColor);
     background-color: var(--4thcolor);
 }
+
+.SwitchButton {
+    background-color: inherit;
+}
+
+.SwitchButton:hover {
+    background-color: var(--FullColor);
+}
+
+#KnightsDivImage:hover {
+    filter: drop-shadow(0px 0px 15px var(--FullColor));
+}
+
+#VikingsDivImage:hover {
+    filter: drop-shadow(0px 0px 15px var(--FullColor));
+}
+
+#SamuraiDivImage:hover {
+    filter: drop-shadow(0px 0px 15px var(--FullColor));
+}
+
+#WuLinDivImage:hover {
+    filter: drop-shadow(0px 0px 15px var(--FullColor));
+}
