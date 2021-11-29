@@ -55,10 +55,6 @@ body {
 
 }
 
-img.MainHeader:hover {
-
-}
-
 /*Links*/
 
  a:link {
@@ -132,14 +128,6 @@ img.MainHeader:hover {
     border-radius: 10px 65px;
     border: none;
     overflow: visible;
-}
-
-.NavLink:hover {
-    
-}
-
-#Active {
-    
 }
 
 /*body*/
@@ -222,38 +210,11 @@ div.gallery {
     display: block;
 }
 
-.CharacterDiv:hover {
-    
-}
-
-/*
-.KnightsDivText, .VikingsDivText, .SamuraiDivText, .WuLinDivText {
+#KnightsDivText, #VikingsDivText, #SamuraiDivText, #WuLinDivText{
     display: none;
-}
-*/
-
-#KnightsDivText {
-    visibility: hidden;
     
     transition: all 0.3s ease;
-}
-
-#VikingsDivText {
-    visibility: hidden;
-    
-    transition: all 0.3s ease;
-}
-
-#SamuraiDivText {
-    visibility: hidden;
-    
-    transition: all 0.3s ease;
-}
-
-#WuLinDivText {
-    visibility: hidden;
-    
-    transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 .CV2DivText {
@@ -264,27 +225,17 @@ div.gallery {
     position: absolute;
 } 
 
-.CV2DivTextDiv {
+#CV2DivTextDiv {
     overflow: scroll;
-    height: var(--CV2DivHeight);
+    height: 102px;
+
+    transition: all 0.1s ease;
+    overflow: hidden;
 }
 
-#KnightsDivImage {
+#KnightsDivImage,  #VikingsDivImage, #SamuraiDivImage, #WuLinDivImage{
     transition: all 0.3s ease;
 }
-
-#VikingsDivImage {
-    transition: all 0.3s ease;
-}
-
-#SamuraiDivImage {
-    transition: all 0.3s ease;
-}
-
-#WuLinDivImage {
-    transition: all 0.3s ease;
-}
-
 
 /*Steam reviews*/
 
@@ -306,10 +257,6 @@ div.gallery {
   }
 
 /*Form*/
-
-.FormTag {
-
-}
 
 .FormRow {
     font-family: Arial, Helvetica, sans-serif;
@@ -388,9 +335,6 @@ div.gallery {
     padding: 7px;
     padding-left: 0px;
     margin: 10px;
-}
-
-.SubmitButton:hover {
 }
 
 .ConfirmButton {
