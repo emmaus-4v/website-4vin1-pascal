@@ -213,7 +213,7 @@ div.gallery {
 #KnightsDivText, #VikingsDivText, #SamuraiDivText, #WuLinDivText{
     display: none;
     
-    transition: all 0.3s ease;
+    transition: all 3s ease;
     overflow: hidden;
 }
 
@@ -222,14 +222,14 @@ div.gallery {
     text-decoration: none;
     color: var(--TextColor);
 
-    position: absolute;
+    
 } 
 
 #CV2DivTextDiv {
     overflow: scroll;
     height: 102px;
 
-    transition: all 0.1s ease;
+    transition: all 0.2s ease!important;
     overflow: hidden;
 }
 

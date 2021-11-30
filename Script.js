@@ -61,7 +61,7 @@ var height = String;
 function HoverImageKnights() {
     console.log("Hovered Knights");
     document.getElementById('KnightsDivText').style.display = "block";
-    lastHovered = 10;
+    lastHovered = 9;
 
     document.getElementById('TemporaryText').style.display = "none";
 }
@@ -95,7 +95,7 @@ function HoverImageWuLin() {
 function reloadImages() {
 
     //If lasthovered isnt an image, hide the text of image
-    if(lastHovered !== 10) {
+    if(lastHovered !== 9) {
     document.getElementById('KnightsDivText').style.display = "none";
 
     }
@@ -113,19 +113,21 @@ function reloadImages() {
     }
 
     console.log("Last Hovered = " + lastHovered)
-    //HeightCorrectionCV2DTD();
 
     //1 Row pixels * amount of rows
-    height = ((37 * lastHovered) + 70)
-        if(lastHovered == 10) {
-            height = height - 20;
-        }
+    height = ((37 * lastHovered) + 70);
 
-    //COnvert to useable string
+    //Convert to useable string
     height = height + "px";
-
     console.log("Div height = " + height);
 
     //Change height of div
     document.getElementById('CV2DivTextDiv').style.height = height;
+
+    /*
+    document.getElementById('KnightsDivText').style.height = height;
+    document.getElementById('VikingsDivText').style.height = height;
+    document.getElementById('SamuraiDivText').style.height = height;
+    document.getElementById('WuLinDivText').style.height = height;
+    */
 }
