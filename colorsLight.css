@@ -1,7 +1,8 @@
 /*css*/
 
 :root {
-    --MainColor: skyblue;
+    --MainColor: rgb(135, 206, 235);
+    --MainColorExtra: rgb(203, 226, 235);
     --SecondayColor: rgb(255,255,255);
     --TersiaryColor: rgb(220,220,220);
     --4thcolor: rgb(255,255,255);
@@ -33,7 +34,7 @@
 }
 
 #Active {
-    background-color: var(--MainColor);
+    background-image: linear-gradient(to right, var(--MainColor), var(--MainColorExtra));
 }
 
 body {

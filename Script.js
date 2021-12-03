@@ -7,25 +7,35 @@ DARK-/LIGHTMODE SWITCHER
 */
 
 //Initial setup
-var ROOT = document.documentElement;
+const ROOT = document.documentElement;
 var isDarkMode = true;
 
-var LightMode = document.getElementById("LightMode");
-var DarkMode = document.getElementById("DarkMode");
+const LightMode = document.getElementById("LightMode");
+const DarkMode = document.getElementById("DarkMode");
+
  
 //MainSwitchColors
 function switchColors() {
     //Switch variable
     isDarkMode = !isDarkMode;
+
+    //Switch name
+    
     
     //Change css file
-    if(isDarkMode === false) {
+    if(isDarkMode == false) {
         enableStylesheet(LightMode);
         disableStylesheet(DarkMode);
+
+        //Switch Button name
+        document.getElementById("FooterButtonID").innerHTML = "Dark Mode";
     } 
     else {
         enableStylesheet(DarkMode);
         disableStylesheet(LightMode);
+
+        //Switch Button name
+        document.getElementById("FooterButtonID").innerHTML = "Light Mode";
     }
 
     //Debug
@@ -42,7 +52,6 @@ function disableStylesheet (style) {
 }
 
 
-
 /*
 
 CHARACTERS V2 INFO SHOW ON HOVER
@@ -52,7 +61,6 @@ CHARACTERS V2 INFO SHOW ON HOVER
 
 //initial setup
 var lastHovered = 0;
-var ROOT = document.querySelector(':root')
 var height = String;
 
 //Main Functions
@@ -97,7 +105,6 @@ function reloadImages() {
     //If lasthovered isnt an image, hide the text of image
     if(lastHovered !== 9) {
     document.getElementById('KnightsDivText').style.display = "none";
-
     }
 
     if(lastHovered !== 7) {
