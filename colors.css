@@ -169,11 +169,3 @@ div.desc {
     border: 1px solid var(--MainColor);
     border-radius: 30px 10px;
 }
-
-.GamemodesDiv {
-    background-color: var(--4thcolor);
-
-    border-left: 2px solid var(--MainColor);
-    border-bottom: 2px solid var(--MainColor);
-    background-color: var(--4thcolor);
-}
