@@ -1,5 +1,5 @@
 :root {
-    --CV2DivHeight : 0px;
+
 }
 
 html {
@@ -226,7 +226,7 @@ div.gallery {
     overflow: scroll;
     height: 102px;
 
-    transition: all 0.2s ease!important;
+    transition: height 0.2s ease!important;
     overflow: hidden;
 }
 
@@ -236,22 +236,22 @@ div.gallery {
 
 /*Steam reviews*/
 
-  .SteamReviewsImage {
-      width: 50%;
-      overflow: hidden;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 15px;
-  }
+.SteamReviewsImage {
+    width: 50%;
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
 
-  .SteamIFrame {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 99%;
-      height: 700px;
-  }
+.SteamIFrame {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+    height: 700px;
+}
 
 /*Form*/
 
@@ -376,7 +376,4 @@ div.gallery {
 
 .SwitchButton {
     font-size: 16px;
-
-    border-radius: 30px 10px;
-    border: none;
 }
