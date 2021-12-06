@@ -234,6 +234,39 @@ div.gallery {
     transition: all 0.3s ease;
 }
 
+/* Gamemodes */
+
+.GamemodesDiv {
+    display: flex;
+    justify-content: center;
+
+    margin: auto;
+    width: 85%;
+    margin-bottom: 40px;
+
+    border-radius: 10px 65px;
+
+    overflow: hidden;
+}
+
+.GamemodesDivInner {
+    padding: 50px;
+}
+
+.GamemodesH {
+    width: min-content!important;
+
+    padding: 50px 10px;
+    margin: 0px;
+
+    white-space: nowrap;
+}
+
+.GamemodesT {
+    padding: 15px 10px;
+    margin-top: 0px;
+}
+
 /*Steam reviews*/
 
 .SteamReviewsImage {
