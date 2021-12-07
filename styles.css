@@ -269,6 +269,7 @@ div.desc {
 
 .GamemodesDivInner {
     margin: 0px 20px;
+    width: 19%;
 
     transition: transform 0.6s ease;
 }
@@ -315,20 +316,13 @@ div.desc {
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     display: block;
-    padding: 1%;
+    padding: 40px;
 
     border-radius: 10px 65px;
     border: none;
 
     outline: none;
 }
-
-.FormRow label {
-    padding: 20px;
-    padding-left: 0px;
-    margin-left: 0px;
-}
-
 
 /*Form inputs*/
 
